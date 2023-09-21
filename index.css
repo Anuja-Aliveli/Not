@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-page {
+  font-family: "Roboto";
+  min-height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar {
+  margin-right: 20px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0.3;
+}
+.links-container {
+  display: flex;
+  align-items: center;
+}
+.links-container a {
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+}
+.blue {
+  color: rgba(19, 142, 209, 1) !important;
+}
+.nav-button {
+  background-color: rgba(0, 72, 108, 1);
+  color: rgba(255, 255, 255, 1);
+  width: fit-content;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.play-store {
+  height: 30px;
+  width: 120px;
+  background-color: rgba(51, 51, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.hamburger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger i {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .links-container,
+  .buttons-container {
+    display: none;
+  }
+}
